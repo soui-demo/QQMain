@@ -37,7 +37,7 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPTSTR lp
 
 	GetModuleFileName(NULL, szCurrentDir, sizeof(szCurrentDir));
 	LPTSTR lpInsertPos = _tcsrchr(szCurrentDir, _T('\\'));
-	_tcscpy(lpInsertPos + 1, _T("..\\demos\\QQMain"));
+	_tcscpy(lpInsertPos + 1, _T("..\\QQMain"));
 	SetCurrentDirectory(szCurrentDir);
 
     {
